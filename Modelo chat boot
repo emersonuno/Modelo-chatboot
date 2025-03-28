@@ -1,0 +1,17 @@
+entrada = input()
+
+
+def descrever_recurso(recurso):
+    if recurso == "Acurácia":
+        return "Percentual de previsões corretas sobre o total de previsões"
+    elif recurso == "Precisão":
+        return "Proporção de previsões positivas corretas sobre as feitas"
+    elif recurso == "Recall":
+        return "Percentual de casos positivos corretamente identificados"
+    elif recurso == "F1-Score":
+        return "Média harmônica entre precisão e recall"
+    else:
+        return "Recurso inválido"
+
+
+print(descrever_recurso(entrada))
